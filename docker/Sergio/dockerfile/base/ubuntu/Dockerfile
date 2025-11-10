@@ -8,4 +8,4 @@ RUN apt update && apt install -yq --no-install-recommends \
 
 # mantener vivo el contenedor
 # tail es un comando que nunca acaba su ejecucion
-CMD [ "tail -f /dev/null" ]
+CMD [ "tail", "-f", "/dev/null" ]
