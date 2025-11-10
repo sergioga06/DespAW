@@ -5,4 +5,4 @@ services:
       # se tiene acceso a cualquier recurso
       context: /home/sergio/proyectos/DespAW/docker/Sergio
       dockerfile: ./dockerfile/base/ubuntu/Dockerfile
-   container_name: ctbaseDaw
+    container_name: ctbaseDaw
