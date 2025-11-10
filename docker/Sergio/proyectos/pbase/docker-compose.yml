@@ -3,5 +3,5 @@ services:
  build:
  # ruta a traves de la cual desde cualquier proyecto
  # se tiene acceso a cualquier recurso
-    context: ../../dockerfile/base/ubuntu
-    dockerfile: Dockerfile
+    context: /home/sergio/proyectos/DespAW/docker/Sergio
+    dockerfile: Dockerfileped
