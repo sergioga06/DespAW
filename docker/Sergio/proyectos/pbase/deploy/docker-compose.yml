@@ -1,0 +1,8 @@
+services: 
+   base:
+    build:
+      # ruta a traves de la cual desde cualquier proyecto
+      # se tiene acceso a cualquier recurso
+      context: /home/sergio/proyectos/DespAW/docker/Sergio
+      dockerfile: ./dockerfile/base/ubuntu/Dockerfile
+   container_name: ctbaseDaw
