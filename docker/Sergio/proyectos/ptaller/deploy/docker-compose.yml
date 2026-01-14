@@ -7,7 +7,6 @@ services:
         - PROYECTO=${PROYECTO}
         - USUARIO=${USUARIO}
         - TIPO=${TIPO}
-    ports:
-      - "8080:80"
+    image: ${FIRMA}/ub${PROYECTO}
     container_name: ctwebtaller
     
