@@ -1,0 +1,13 @@
+services:
+  webtaller:
+    build:
+      context: ../
+      dockerfile: ./deploy/Dockerfile
+      args:
+        - PROYECTO=${PROYECTO}
+        - USUARIO=${USUARIO}
+        - TIPO=${TIPO}
+    ports:
+      - "8080:80"
+    container_name: ctwebtaller
+    
