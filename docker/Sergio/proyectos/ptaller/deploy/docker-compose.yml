@@ -3,10 +3,10 @@ services:
     build:
       context: ../
       dockerfile: ./deploy/Dockerfile
-      args:
-        - PROYECTO=${PROYECTO}
-        - USUARIO=${USUARIO}
-        - TIPO=${TIPO}
-    image: ${FIRMA}/ub${PROYECTO}
+    image: ptaller_apache:latest
     container_name: ctwebtaller
+    volumes: 
+      - ./logs:/root/logs
+    ports:
+      - "8080:80"
     
