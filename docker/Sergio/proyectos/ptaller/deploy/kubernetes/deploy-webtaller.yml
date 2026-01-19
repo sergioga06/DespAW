@@ -15,7 +15,7 @@ spec:
    spec:
      containers:
        - name: webtaller
-         image: jose196/ubjambbptaller:latest
+         image: sergio196/ubjambbptaller:latest
          # imagePullPolicy: Never
          ports:
            - containerPort: 80
