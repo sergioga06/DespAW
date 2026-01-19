@@ -7,12 +7,13 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: webtaller.jrodriguez.es
+    - host: webtaller.jrodrodriguez.es
       http:
-        paths: /
-          pathType: Prefix
-          backend:
-            service:
-              name: webtaller-service
-              port:
-                number: 80
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: webtaller-service
+            port:
+              number: 80
