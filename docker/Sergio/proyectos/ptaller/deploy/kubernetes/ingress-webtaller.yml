@@ -9,11 +9,11 @@ spec:
   rules:
     - host: webtaller.sergiogallardogrima.es
       http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: webtaller-service
-            port:
-              number: 80
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: webtaller-service
+                port:
+                  number: 80
